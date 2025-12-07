@@ -124,5 +124,3 @@ POST /login Admin login
 ✔ Responsive navbar
 
 ✔ Filters UI
-
-If you want, I can generate a README with embedded screenshots — just upload screenshots or ask for placeholders.
