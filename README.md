@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+### Product Store Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive React-based frontend that displays products, supports filtering, pagination, search, product detail view, and includes an enquiry system where customers can submit enquiries for specific products.
+An admin can view all enquiries in a beautifully styled interface.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+# Product Features
 
-### `npm start`
+-> Product listing page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-> Search by product name
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-> Category filter
 
-### `npm test`
+-> Pagination + limit selection
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-> Product detail modal with image, long description & price
 
-### `npm run build`
+-> Enquiry form modal with validation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Enquiry System
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-> Customers can submit enquiries for any product
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Form validation for:
 
-### `npm run eject`
+-> Name
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-> Email
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-> Phone
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-> Message
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-> All enquiries are stored in the backend (SQLite)
 
-## Learn More
+# Admin Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-> Admin login
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-> View all enquiries in a clean grid UI
 
-### Code Splitting
+-> Logout functionality
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+-> Responsive layout for mobile users
 
-### Analyzing the Bundle Size
+-> Automatically formatted enquiry timestamps
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Tech Stack
 
-### Making a Progressive Web App
+# Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+-> React.js
 
-### Advanced Configuration
+-> Axios
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+-> React Router
 
-### Deployment
+-> Plain CSS (no frameworks used)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+-> Backend (for reference)
 
-### `npm run build` fails to minify
+-> Node.js + Express
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-> SQLite database
+
+-> JWT authentication
+
+## Installation
+
+1️⃣ Clone the repository
+git clone https://github.com/your-username/your-frontend-repo.git
+cd your-frontend-repo
+
+2️⃣ Install dependencies
+npm install axios react-router-dom react-icons
+
+3️⃣ Create .env file
+REACT_APP_BASE_URL=http://localhost:4000
+
+4️⃣ Start the development server
+npm start
+
+App runs on:
+👉 http://localhost:3000
+
+📁 Project Structure
+src/
+│── components/
+│ ├── Products/
+│ ├── ProductShort/
+│ ├── ProductDetailCard/
+│ ├── EnquiryForm/
+│ ├── Enquiries/
+│── services/
+│── pages/
+│── App.js
+│── index.js
+│── index.css
+
+🔧 API Endpoints Used
+Products
+Method Endpoint Description
+GET /products?search=&category=&page=&limit= Fetch all products
+Enquiries
+Method Endpoint Description
+POST /enquiry/:product_id Submit enquiry
+GET /enquiries Get all enquiries
+Auth
+Method Endpoint Description
+POST /login Admin login
+
+# Screens Included
+
+✔ Product listing
+
+✔ Product detail modal
+
+✔ Enquiry form modal
+
+✔ Admin enquiries dashboard
+
+✔ Responsive navbar
+
+✔ Filters UI
+
+If you want, I can generate a README with embedded screenshots — just upload screenshots or ask for placeholders.

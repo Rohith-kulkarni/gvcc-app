@@ -1,0 +1,111 @@
+.enquiries-container {
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.enquiries-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.loading,
+.no-enquiries {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 3rem;
+}
+
+.enquiries-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(28%, 1fr));
+  gap: 2rem;
+}
+
+.enquiry-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.enquiry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.enquiry-header h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.enquiry-date {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.message {
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+
+.product-id {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .enquiries-grid {
+    grid-template-columns: repeat(auto-fill, minmax(90%, 1fr));
+  }
+}
+
+.header-and-logout {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.logout-container{
+    margin-left: auto;
+}
+
+.logout-btn {
+  background-color: #ff4b4b;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s ease;
+  box-shadow: 0 4px 10px rgba(255, 75, 75, 0.3);
+}
+
+.logout-btn:hover {
+  background-color: #e63939;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(230, 57, 57, 0.4);
+}
+
+.logout-btn:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 600px) {
+  .header-and-logout {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}

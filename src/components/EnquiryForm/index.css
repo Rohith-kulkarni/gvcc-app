@@ -1,0 +1,81 @@
+.enquiry-modal-box {
+  width: 90%;
+  max-width: 450px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  position: relative;
+  animation: fadeInScale 0.25s ease-out;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+.enq-title {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #1a1a1a;
+}
+
+.enq-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.enq-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.enq-field label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.enq-field input,
+.enq-field textarea {
+  border: 1.5px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  background-color: #fafafa;
+}
+
+.enq-field input:focus,
+.enq-field textarea:focus {
+  border-color: #1a7fdd;
+  background-color: #fff;
+}
+
+.enq-field textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.enq-submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #1a7fdd;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.enq-submit-btn:hover {
+  background-color: #0f6abc;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}

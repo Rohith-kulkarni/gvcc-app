@@ -1,0 +1,122 @@
+/* NAV CONTAINER */
+.navbar-outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 4%;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.nav-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links-container a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links-container a:hover {
+    opacity: 0.7;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    gap: 1%;
+    background: white;
+    padding: 1% 2%;
+    border-radius: 1rem;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    width: 10rem;
+}
+
+.search-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+
+
+
+
+.hamburger-btn {
+    background: transparent;
+    border: none;
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-outer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2% 4%;
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        color: white;
+        width: 100%;
+    }
+    .hamburger-btn {
+        display: block;
+        margin-left: auto;
+    }
+
+    .nav-links-container {
+        width: 100%;
+        background: #1d1d1d;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease;
+
+        padding: 0; 
+        margin-top: 2%;
+    }
+
+
+    .nav-links-container.active {
+        max-height: 500px;     
+        padding: 4%;  
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+}
